@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Rogliano';
+  src: url('https://cdn2.hubspot.net/hubfs/7562645/Portfolio/fonts/Rogliano/Rogliano%20Light%20.ttf')
+    format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Rogliano';
+  src: url('https://cdn2.hubspot.net/hubfs/7562645/Portfolio/fonts/Rogliano/Rogliano%20Regular.ttf')
+    format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Rogliano';
+  src: url('https://cdn2.hubspot.net/hubfs/7562645/Portfolio/fonts/Rogliano/Rogliano%20Bold%20.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Rogliano';
+  src: url('https://cdn2.hubspot.net/hubfs/7562645/Portfolio/fonts/Rogliano/Rogliano%20ExtraBold%20.ttf')
+    format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('https://cdn2.hubspot.net/hubfs/7562645/Portfolio/fonts/SofiaPro/Sofia%20Pro%20Light%20.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('https://cdn2.hubspot.net/hubfs/7562645/Portfolio/fonts/SofiaPro/Sofia%20Pro%20Regular%20.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('https://cdn2.hubspot.net/hubfs/7562645/Portfolio/fonts/SofiaPro/Sofia%20Pro%20Medium%20.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('https://cdn2.hubspot.net/hubfs/7562645/Portfolio/fonts/SofiaPro/Sofia%20Pro%20Bold%20.ttf') format('truetype');
+  font-weight: 700;
+}
+
+$rogliano: 'Rogliano', sans-serif;
+$sofiaPro: 'Sofia Pro', sans-serif;

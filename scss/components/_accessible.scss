@@ -1,0 +1,29 @@
+.c-accessible {
+  background-image: url('https://cdn2.hubspot.net/hubfs/7562645/Portfolio/main.png');
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  justify-content: flex-end;
+  margin-bottom: 10rem;
+  min-height: 50rem;
+  width: 100%;
+
+  @include iota-breakpoint(lg) {
+    display: flex;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: $rogliano;
+    margin-top: 2rem;
+  }
+
+  &__copy {
+    @include type-size(body-md);
+    margin-bottom: 2rem;
+  }
+}

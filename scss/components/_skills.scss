@@ -1,0 +1,53 @@
+.c-skills {
+  &:last-child {
+    margin: 0;
+  }
+  
+  &__box {
+    align-items: flex-start;
+    border: 0.1rem solid color(purple);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 0 5rem 0;
+    min-height: 20rem;
+    padding: 4rem 2.5rem 2.5rem 2.5rem;
+    position: relative;
+    transition: all 200ms ease;
+    width: 100%;
+
+    @include iota-breakpoint(md) {
+      margin: 5rem 0;
+      min-height: 24rem;
+    }
+    &:hover {
+      border: 0.1rem solid color(green);
+    }
+  }
+
+  &__img {
+    bottom: auto;
+    border-radius: 50%;
+    background-color: color(white);
+    left: 1.5rem;
+    top: -3rem;
+    right: 0;
+    width: 6.5rem;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-family: $rogliano;
+    font-weight: 700;
+
+    @include type-size(level2);
+  }
+
+  &__copy {
+    font-family: $sofiaPro;
+    @include type-size(body);
+  }
+}

@@ -1,0 +1,48 @@
+@import '~@glidejs/glide/src/assets/sass/glide.core';
+
+.glide {
+  display: flex;
+
+  &__slides {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    height: 100%;
+  }
+
+  &__arrow {
+    align-items: center;
+    appearance: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 4.4rem;
+    border: none;
+    color: color(black);
+    cursor: pointer;
+    display: flex;
+    height: 4.4rem;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4.4rem;
+
+    &--left {
+      left: 0;
+      background-image: url('../../assets/icons/previousBtn.png');
+
+      @include iota-breakpoint(md) {
+        left: 0;
+        transform: translateX(-50%);
+      }
+    }
+
+    &--right {
+      background-image: url('../../assets/icons/nextBtn.png');
+      right: 0;
+      @include iota-breakpoint(md) {
+        right: 0;
+      }
+    }
+  }
+}

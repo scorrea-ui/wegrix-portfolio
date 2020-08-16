@@ -1,0 +1,53 @@
+.c-quote {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 30rem;
+  width: 100%;
+  font-family: $rogliano;
+
+  @include iota-breakpoint(md) {
+    background-position: center;
+  }
+
+  &--bg {
+    background-image: url('https://cdn2.hubspot.net/hubfs/7562645/Portfolio/quote.png');
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--white {
+    display: flex;
+  }
+
+  &__box {
+    align-items: stretch;
+    background-color: color(light-purple);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 60rem;
+    min-height: 100%;
+    margin-bottom: 10rem;
+    padding: 4.5rem 2rem;
+    position: relative;
+
+    @include iota-breakpoint(md) {
+      padding: 4.5rem 3.4rem;
+    }
+
+    p {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__author {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

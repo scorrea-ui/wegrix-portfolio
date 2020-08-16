@@ -1,0 +1,32 @@
+.c-books {
+  min-height: calc(100vh - 25.8rem);
+  &__title {
+    font-weight: 700;
+    margin: 3rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  & .ant-input-search {
+    margin-bottom: 3rem;
+  }
+
+  &__results {
+    text-align: center;
+    width: 100%;
+  }
+
+  &__wrapper {
+    padding: 0 2rem;
+  }
+
+  &__book {
+    img {
+      height: 15rem;
+
+      @include iota-breakpoint(md) {
+        height: 20rem;
+      }
+    }
+  }
+}

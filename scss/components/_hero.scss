@@ -1,0 +1,84 @@
+.c-hero {
+  background-position: initial;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  &--home {
+    background-image: url("https://cdn2.hubspot.net/hubfs/7562645/Portfolio/hero.png");
+    background-size: cover;
+    margin-bottom: 2rem;
+    min-height: 45rem;
+
+    @include iota-breakpoint(md) {
+      background-position: center;
+      min-height: 70rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &--about {
+    background-position: center;
+    background: #5c258d;
+    background: -webkit-linear-gradient(
+      to right,
+      #4389a2,
+      #5c258d
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4389a2, #5c258d);
+
+    background-size: contain;
+    background-position: top;
+    margin-bottom: 5rem;
+    min-height: 45rem;
+    padding: 4rem 0;
+    width: 100%;
+  }
+
+  &__title {
+    font-family: $rogliano;
+    font-weight: 900;
+
+    &--home {
+      @include type-size(level1);
+      margin-bottom: 2.4rem;
+    }
+
+    &--about {
+      @include type-size(level1);
+      color: color(white);
+    }
+
+    &--contact {
+      @include type-size(level2);
+    }
+  }
+
+  &__copy {
+    margin-bottom: 2.2rem;
+    font-family: $sofiaPro;
+  }
+
+  &__buttons {
+    text-align: center;
+    width: 100%;
+
+    @include iota-breakpoint(md) {
+      display: flex;
+      text-align: left;
+    }
+  }
+
+  &__btn {
+    margin: 1rem 0;
+    @include iota-breakpoint(md) {
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

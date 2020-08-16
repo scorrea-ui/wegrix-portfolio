@@ -1,0 +1,16 @@
+.c-contact {
+  margin: 10rem 0;
+
+  @include iota-breakpoint(md) {
+    margin: 20rem 0;
+  }
+
+  &__title {
+    @include type-size(footer-title);
+
+    font-family: $rogliano;
+    font-weight: 800;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+}

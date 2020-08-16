@@ -1,0 +1,32 @@
+$type-sizes: (
+  body: (
+    1.6rem,
+    1.375,
+  ),
+  body-md: (
+    1.8rem,
+    2,
+  ),
+  body-lg: (
+    2.2rem,
+    2.36,
+  ),
+  level1: (
+    6.8rem,
+    1.176,
+  ),
+  level2: (
+    3rem,
+    1.36,
+  ),
+  small: (
+    1.2rem,
+    1,
+  ),
+  footer-title: (
+    5rem,
+    1.1,
+  ),
+);
+
+@import '~iotacss/modules/iotacss-objs-type/objects.type';

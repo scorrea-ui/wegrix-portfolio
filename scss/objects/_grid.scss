@@ -1,0 +1,27 @@
+/*
+* Iota's grid object
+* https://www.iotacss.com/docs/objects/grid/
+*/
+$iota-objs-grid-aligned: true;
+$iota-objs-grid-rev: true;
+
+$iota-objs-grid-gutter-default: (
+  null: 1rem,
+  md: $iota-global-gutter-default,
+);
+
+$iota-objs-grid-gutter-extra: (
+  "flush": (
+    null: 0,
+  ),
+  "cards": (
+    null: 1.5rem,
+  ),
+  "books": (
+    null: 1rem,
+  ),
+);
+$iota-objs-grid-flex: $iota-global-flex;
+$iota-objs-grid-equal-height: true;
+
+@import "~iotacss/objects/grid";

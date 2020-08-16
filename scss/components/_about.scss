@@ -1,0 +1,43 @@
+.c-about {
+  margin: 4rem 0;
+
+  @include iota-breakpoint(md) {
+    margin: 14rem 0;
+  }
+
+  &__title {
+    @include type-size(level2);
+    margin-bottom: 4rem;
+
+    @include iota-breakpoint(md) {
+      @include type-size(level1);
+      margin-bottom: 14rem;
+    }
+  }
+
+  &__subtitle {
+    @include type-size(level2);
+  }
+
+  &__copy {
+    @include type-size(body-md);
+  }
+
+  &__img {
+    display: flex;
+
+    margin: 0 auto 3.2rem auto;
+    text-align: center;
+    width: 100%;
+
+    @include iota-breakpoint(md) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__me {
+    border-radius: 50%;
+    height: 18rem;
+    width: 18rem;
+  }
+}

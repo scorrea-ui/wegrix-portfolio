@@ -1,0 +1,42 @@
+.c-card {
+  margin-bottom: 2rem;
+  &__img {
+    margin-bottom: 1rem;
+    img {
+      height: 20rem;
+      width: 100%;
+    }
+  }
+
+  &__button {
+    appearance: none;
+    background: #1890ff;
+    border-color: #1890ff;
+    box-shadow: 0 0.2rem 0 rgba(0, 0, 0, 0.045);
+    border: none;
+    color: #fff;
+    padding: 0 2rem;
+    text-shadow: 0 -0.1rem 0 rgba(0, 0, 0, 0.12);
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    min-height: 3rem;
+  }
+
+  &__link {
+    font-size: 1.2rem;
+  }
+
+  &__reveal {
+    display: none;
+  }
+}
+
+.ant-modal-body {
+  p {
+    margin-bottom: 1.4rem;
+  }
+}

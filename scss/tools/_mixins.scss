@@ -1,0 +1,12 @@
+@mixin type-size($t) {
+  @if map-has-key($type-sizes, $t) {
+    @include iota-type(map-get($type-sizes, '#{$t}'));
+  }
+}
+
+@mixin class($name) {
+  .#{$name},
+  %#{$name} {
+    @content;
+  }
+}

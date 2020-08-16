@@ -1,0 +1,132 @@
+.c-header {
+  background-color: color(white);
+  left: 0;
+  text-align: center;
+  top: 0;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+
+  @include iota-breakpoint(md) {
+    text-align: left;
+    position: fixed;
+  }
+
+  &__logo {
+    color: color(purple);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    text-decoration: uppercase;
+
+    @include iota-breakpoint(md) {
+      display: inline-block;
+    }
+  }
+
+  &__list {
+    background-color: color(white);
+    box-shadow: 0 0.3rem 0.4rem 0 rgba(0, 0, 0, 0.06);
+    display: none;
+    justify-content: center;
+    padding: 1.5rem 0;
+    transition: 0.5s all ease-in;
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+      padding-left: 5rem;
+      width: 100vw;
+    }
+
+    @include iota-breakpoint(md) {
+      background-color: transparent;
+      box-shadow: none;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    margin-right: 1rem;
+    padding: 1.2rem 0;
+    text-align: left;
+    width: 100%;
+
+    &:hover {
+      color: color(purple);
+    }
+
+    button {
+      &:hover {
+        color: color(purple);
+      }
+    }
+
+    @include iota-breakpoint(md) {
+      color: color(black);
+      padding: 0;
+      width: auto;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__hamburger {
+    appearance: none;
+    border: none;
+    background: transparent;
+    display: block;
+    height: 1.4rem;
+    width: 2rem;
+
+    @include iota-breakpoint(md) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: block;
+    height: 0;
+    position: relative;
+    transition: 0.4s all ease-in;
+
+    &.active {
+      left: 0;
+      height: 100%;
+      position: absolute;
+    }
+
+    @include iota-breakpoint(md) {
+      height: 100%;
+    }
+  }
+
+  &__link {
+    appearance: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    font-size: 1.6rem;
+    text-decoration: none;
+
+    @include iota-breakpoint(md) {
+      display: inline-block;
+      margin-right: 3rem;
+    }
+
+    img {
+      min-width: 1.6rem;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
